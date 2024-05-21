@@ -69,7 +69,7 @@ def get_curr_location():
     response = requests.get('https://ipinfo.io/json')
     data = response.json()
     lat, lon = data['loc'].split(',')
-    api_key = 'c6e3c9905f104ecf8514cf640a9cfe32'
+    api_key = '09e18cf1189f41e98ef0e1c7506436f5'
     url = f'https://api.opencagedata.com/geocode/v1/json?q={lat}+{lon}&key={api_key}&language=en'
     response = requests.get(url)
     data = response.json()
